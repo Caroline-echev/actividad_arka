@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "1b6a9953-4d03-44ee-8417-b40397205472",
+		"name": "actividad arka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38337891"
+	},
+	"item": [
+		{
+			"name": "Búsqueda de productos por categoría",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/products/category/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"category",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Búsqueda de Pedidos por producto",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/orders/product/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"orders",
+						"product",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener carritos abandonados",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/carts/abandoned",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"carts",
+						"abandoned"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Búsqueda de Pedidos en un rango de fechas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/orders/date-range?from=2024-04-01T00:00:00&to=2024-04-05T23:59:59",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"orders",
+						"date-range"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2024-04-01T00:00:00"
+						},
+						{
+							"key": "to",
+							"value": "2024-04-05T23:59:59"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Historial de Pedidos de un Cliente",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/orders/client/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"orders",
+						"client",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
