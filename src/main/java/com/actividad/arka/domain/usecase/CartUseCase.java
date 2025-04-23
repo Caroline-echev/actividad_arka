@@ -9,6 +9,8 @@ import java.util.List;
 
 @RequiredArgsConstructor
 public class CartUseCase implements ICartServicePort {
+    // S: Esta clase encapsula la lógica de negocio relacionada con carritos
+    // D: Depende de puertos (interfaces), no de detalles de implementación
     private final ICartPersistencePort cartPersistencePort;
 
     @Override

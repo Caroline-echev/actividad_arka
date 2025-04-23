@@ -14,7 +14,8 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/carts")
 public class CartController {
-
+    // S: Este controlador solo se encarga de manejar las peticiones HTTP relacionadas con carrito
+    // D: Depende de abstracciones (interfaces), no de implementaciones concretas
     private final ICartServicePort cartServicePort;
     private final ICartDtoMapper cartDtoMapper;
 

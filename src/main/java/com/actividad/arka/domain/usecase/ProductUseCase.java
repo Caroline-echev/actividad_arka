@@ -11,6 +11,8 @@ import java.util.List;
 
 @RequiredArgsConstructor
 public class ProductUseCase implements IProductServicePort {
+    // SRP: Esta clase encapsula la lógica de negocio relacionada con productos
+    // DIP: Depende de puertos (interfaces), no de detalles de implementación
     private final IProductPersistencePort productPersistencePort;
     private final ICategoryPersistencePort categoryPersistencePort;
     @Override

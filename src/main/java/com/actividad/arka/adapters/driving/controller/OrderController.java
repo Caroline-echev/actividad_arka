@@ -2,7 +2,6 @@ package com.actividad.arka.adapters.driving.controller;
 
 import com.actividad.arka.adapters.driving.dto.OrderResponseDTO;
 import com.actividad.arka.adapters.driving.mapper.IOrderDtoMapper;
-import com.actividad.arka.adapters.driving.dto.ProductResponseDTO;
 import com.actividad.arka.domain.api.IOrderServicePort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -16,6 +15,8 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/orders")
 public class OrderController {
+    // S: Este controlador solo se encarga de manejar las peticiones HTTP relacionadas con ordenes
+    // D: Depende de abstracciones (interfaces), no de implementaciones concretas
     private final IOrderServicePort orderServicePort;
     private final IOrderDtoMapper orderDtoMapper;
 

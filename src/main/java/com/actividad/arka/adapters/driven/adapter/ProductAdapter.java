@@ -10,7 +10,8 @@ import java.util.List;
 
 @RequiredArgsConstructor
 public class ProductAdapter implements IProductPersistencePort {
-
+    // S: Solo se encarga de interactuar con la base de datos para la entidad ProductEntity
+    // I: Esta clase implementa solo los métodos definidos por IProductPersistencePort
     private final IProductRepository productRepository;
     private final IProductEntityMapper productEntityMapper;
 

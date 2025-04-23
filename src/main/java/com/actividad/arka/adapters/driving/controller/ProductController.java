@@ -13,7 +13,8 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/products")
 public class ProductController {
-
+    // S: Este controlador solo se encarga de manejar las peticiones HTTP relacionadas con productos
+    // D: Depende de abstracciones (interfaces), no de implementaciones concretas
     private final IProductServicePort productServicePort;
     private final IProductDtoMapper productDtoMapper;
 

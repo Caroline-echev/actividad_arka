@@ -6,14 +6,15 @@ import com.actividad.arka.domain.exception.notfound.ProductNotFoundException;
 import com.actividad.arka.domain.model.Order;
 import com.actividad.arka.domain.spi.IOrderPersistencePort;
 import com.actividad.arka.domain.spi.IProductPersistencePort;
-import lombok.AllArgsConstructor;
+
 import lombok.RequiredArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.util.List;
 @RequiredArgsConstructor
 public class OrderUseCase implements IOrderServicePort {
-
+    // S: Esta clase encapsula la lógica de negocio relacionada con ordenes
+    // D: Depende de puertos (interfaces), no de detalles de implementación
     private final IProductPersistencePort productPersistencePort;
     private final IOrderPersistencePort orderPersistencePort;
 

@@ -29,7 +29,8 @@ import org.springframework.context.annotation.Configuration;
 @RequiredArgsConstructor
 @Configuration
 public class BeanConfiguration {
-
+    // D: Se definen las implementaciones de los puertos de persistencia e inyección de dependencias
+    // O: Puedes extender funcionalidades registrando nuevos beans sin modificar las clases existentes
 
     @Bean
     public ICategoryPersistencePort categoryPersistencePort(ICategoryRepository categoryRepository, ICategoryEntityMapper categoryEntityMapper) {
